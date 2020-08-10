@@ -1,5 +1,10 @@
 import random
-r = random.randint(1, 100)
+num_start = input('請決定隨機範圍開始值: ')
+num_end = input('請決定隨機數字結束值: ')
+num_start = int(num_start)
+num_end = int(num_end)
+
+r = random.randint(num_start, num_end)
 count = 0  #如果寫在while裡面會變成歸零
 while True:
 	count += 1
